@@ -8,7 +8,7 @@ dep = data.iloc[:,2]
 indep = np.array(data.iloc[:,0:2])
 print(indep)
 
-#indep = sm.add_constant(indep)
+#indep = sm.add_constant(indep) (önemli)
 model = sm.OLS(dep,indep)
 results = model.fit()
 print(results.params)
