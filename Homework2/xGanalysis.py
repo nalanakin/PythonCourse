@@ -13,10 +13,3 @@ indep = np.array(data.iloc[:,0:2])
 #print(dep.shape)
 
 ols_hm2.ols(indep, dep)
-
-
-#control = np.array(data.iloc[:,2])
-#control = np.reshape(control, (760,1))
-#dep = data.iloc[:,1]
-
-#ols_hm2.ols(control, dep)
