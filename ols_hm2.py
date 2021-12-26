@@ -10,7 +10,7 @@ def ols(X, y):
     #coeefficient
     B = np.linalg.inv(X.transpose() @ X) @ X.transpose() @ y
     #print(B)
-    #standardized coeefficient
+    #standardizedcoeefficient
     BB = (np.std(X) / np.std(y)) * B
     print(BB)
     #error
